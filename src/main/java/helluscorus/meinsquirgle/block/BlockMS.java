@@ -6,7 +6,6 @@ import helluscorus.meinsquirgle.reference.Reference;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
-import net.minecraft.item.ItemStack;
 
 public class BlockMS extends Block {
 
