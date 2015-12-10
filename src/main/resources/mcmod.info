@@ -2,7 +2,7 @@
 
 "modid": "MeinSquirgle",
 "name": "MeinSquirgle",
-"description": "Minecraft MIDI Interface.",
+"description": "Minecraft MIDI device interface.",
 "mcversion": "1.7.10",
 "version": "0.1",
 "url": "https://github.com/helluscorus/MeinSquirgle",
