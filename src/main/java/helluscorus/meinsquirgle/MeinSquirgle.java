@@ -7,6 +7,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import helluscorus.meinsquirgle.handler.ConfigurationHandler;
+import helluscorus.meinsquirgle.init.ModBlocks;
 import helluscorus.meinsquirgle.init.ModItems;
 import helluscorus.meinsquirgle.proxy.IProxy;
 import helluscorus.meinsquirgle.reference.Reference;
@@ -28,6 +29,7 @@ public class MeinSquirgle {
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
 
         ModItems.init();
+        ModBlocks.init();
 
         LogHelper.info("Pre-Initialization Complete!");
     }
