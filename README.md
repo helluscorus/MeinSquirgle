@@ -1,3 +1,3 @@
 # MeinSquirgle
 
-Minecraft MIDI Hardware Interface.
+Minecraft MIDI device interface.
