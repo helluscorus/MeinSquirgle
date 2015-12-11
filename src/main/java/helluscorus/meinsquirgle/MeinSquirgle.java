@@ -7,8 +7,10 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import helluscorus.meinsquirgle.handler.ConfigurationHandler;
+import helluscorus.meinsquirgle.handler.MidiHandler;
 import helluscorus.meinsquirgle.init.ModBlocks;
 import helluscorus.meinsquirgle.init.ModItems;
+import helluscorus.meinsquirgle.midi.MidiMS;
 import helluscorus.meinsquirgle.proxy.IProxy;
 import helluscorus.meinsquirgle.reference.Reference;
 import helluscorus.meinsquirgle.utility.LogHelper;
@@ -31,18 +33,24 @@ public class MeinSquirgle {
         ModItems.init();
         ModBlocks.init();
 
+        MidiHandler.init();
+        MidiMS.init();
+
         LogHelper.info("Pre-Initialization Complete!");
     }
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
         // recipes & gui & tile entities
+
+
         LogHelper.info("Initialization Complete!");
     }
 
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event) {
 
+        //where to put this?!
         LogHelper.info("Post-Initialization Complete!");
     }
 }
