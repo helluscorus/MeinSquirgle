@@ -1,6 +1,11 @@
 package helluscorus.meinsquirgle.block;
 
 import helluscorus.meinsquirgle.creativetab.CreativeTabsMS;
+import helluscorus.meinsquirgle.midi.MidiMS;
+
+
+import net.minecraft.world.World;
+
 
 public class BlockSquirgle extends BlockMS {
 
@@ -10,4 +15,5 @@ public class BlockSquirgle extends BlockMS {
         this.setBlockName("squirgle");
         this.setCreativeTab(CreativeTabsMS.MS_TAB);
     }
+
 }
