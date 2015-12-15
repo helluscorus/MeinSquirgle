@@ -11,6 +11,7 @@ import helluscorus.meinsquirgle.handler.MidiHandler;
 import helluscorus.meinsquirgle.handler.PlayerEventHandlerMS;
 import helluscorus.meinsquirgle.init.ModBlocks;
 import helluscorus.meinsquirgle.init.ModItems;
+import helluscorus.meinsquirgle.init.ModTileEntities;
 import helluscorus.meinsquirgle.midi.MidiMS;
 import helluscorus.meinsquirgle.proxy.IProxy;
 import helluscorus.meinsquirgle.reference.Reference;
@@ -38,8 +39,9 @@ public class MeinSquirgle {
 
         ModItems.init();
         ModBlocks.init();
+        ModTileEntities.init();
 
-        MidiHandler.init();
+        //MidiHandler.init();
         MidiMS.init();
 
         LogHelper.info("Pre-Initialization Complete!");
@@ -55,8 +57,6 @@ public class MeinSquirgle {
 
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event) {
-
-        MidiMS.midiNote();
 
         LogHelper.info("Post-Initialization Complete!");
     }

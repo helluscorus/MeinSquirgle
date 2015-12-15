@@ -21,7 +21,8 @@ public class MidiHandler {
                 device = MidiSystem.getMidiDevice(infos[i]);
                 LogHelper.info("Device: " + i + " " + infos[i]);
             } catch (MidiUnavailableException e) {
-                // Handle or throw exception...
+
+                LogHelper.info("Nope nope nope");
             }
         }
 
